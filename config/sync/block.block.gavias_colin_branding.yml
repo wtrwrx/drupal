@@ -1,0 +1,25 @@
+uuid: 566639d1-9530-4845-9490-3f1a790728c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gavias_colin
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: gavias_colin_branding
+theme: gavias_colin
+region: offcanvas
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,35 @@
+uuid: d3b1203c-0233-4eb8-9fe6-f9ad98f4e913
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:analytics_tracking_codes:2f254ef2-d0bf-46b2-9339-9010a6dd80ea'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+  theme:
+    - waterworks
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: google
+theme: waterworks
+region: main_menu
+weight: 0
+provider: null
+plugin: 'block_content:2f254ef2-d0bf-46b2-9339-9010a6dd80ea'
+settings:
+  id: 'block_content:2f254ef2-d0bf-46b2-9339-9010a6dd80ea'
+  label: Google
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

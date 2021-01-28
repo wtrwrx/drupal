@@ -1,0 +1,15 @@
+uuid: 39fde0fe-22e6-41dd-9dfe-36bb090097c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.category
+_core:
+  default_config_hash: EYwkrWBKqagT7oOgD-nxlcFrIX3Ogv9N1CFVQla3Wrc
+id: taxonomy_term.category.default
+targetEntityType: taxonomy_term
+bundle: category
+mode: default
+content: {  }
+hidden:
+  description: true

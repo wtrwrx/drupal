@@ -1,0 +1,18 @@
+global-styling:
+  header: true
+  css:
+    theme:
+      //fonts:googleapis:com/css?family=Oswald:200,300,400,500,600,700: { type: external }
+      css/icomoon/style.css: {}
+      css/skins/white/bootstrap.css: {}
+      css/waterworks.css: {}
+  js:
+    js/waterworks.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+waterworks.skin.white:
+  css:
+    theme:
+      css/skins/white/template.css: {}

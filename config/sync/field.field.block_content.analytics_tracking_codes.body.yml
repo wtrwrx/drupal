@@ -1,0 +1,22 @@
+uuid: 9255d4a2-fc32-4c88-bc59-a19a311d2b19
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.analytics_tracking_codes
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.analytics_tracking_codes.body
+field_name: body
+entity_type: block_content
+bundle: analytics_tracking_codes
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

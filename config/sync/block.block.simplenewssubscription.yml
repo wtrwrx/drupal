@@ -1,0 +1,34 @@
+uuid: a4790f2f-ecfc-4120-a812-f7ffcfdf46e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - simplenews
+  theme:
+    - waterworks
+third_party_settings:
+  gaviasthemer:
+    classes: newsletter-block-1
+id: simplenewssubscription
+theme: waterworks
+region: other
+weight: -3
+provider: null
+plugin: simplenews_subscription_block
+settings:
+  id: simplenews_subscription_block
+  label: Newsletter
+  provider: simplenews
+  label_display: '0'
+  newsletters:
+    default: default
+  message: '<none>'
+  unique_id: 9f4fee54-434f-4e73-bf13-0fa715c97fbc
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

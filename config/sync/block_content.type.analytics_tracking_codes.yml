@@ -1,0 +1,8 @@
+uuid: 362ad105-2e8c-427b-aae9-06960df9c3b7
+langcode: en
+status: true
+dependencies: {  }
+id: analytics_tracking_codes
+label: 'Analytics Tracking Codes'
+revision: 0
+description: 'Track website analytics'

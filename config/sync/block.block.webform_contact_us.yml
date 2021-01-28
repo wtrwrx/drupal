@@ -1,0 +1,50 @@
+uuid: efed2783-3214-442a-b049-f55c85b04858
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.contact_us
+  module:
+    - block_visibility_groups
+    - ctools
+    - gaviasthemer
+    - webform
+  theme:
+    - waterworks
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: webform_contact_us
+theme: waterworks
+region: other
+weight: -1
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Contact Us (Webform)'
+  provider: webform
+  label_display: '0'
+  webform_id: contact_us
+  default_data: ''
+  redirect: false
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      webform: webform
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    bundles:
+      contact_us: contact_us
+    negate: false
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'

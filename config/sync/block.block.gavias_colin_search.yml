@@ -1,0 +1,22 @@
+uuid: c4ac2231-b992-4a39-a8d8-66564d8054bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - gavias_colin
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: gavias_colin_search
+theme: gavias_colin
+region: offcanvas
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

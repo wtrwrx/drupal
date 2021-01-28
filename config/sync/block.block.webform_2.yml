@@ -1,0 +1,35 @@
+uuid: c49ed207-7d27-45bd-abd1-1b0202b84611
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.newsletter_subscribe_footer
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - webform
+  theme:
+    - waterworks
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: webform_2
+theme: waterworks
+region: other
+weight: 1
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Sign Up Newsletter'
+  provider: webform
+  label_display: '0'
+  webform_id: newsletter_subscribe_footer
+  default_data: ''
+  redirect: false
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

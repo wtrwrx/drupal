@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Contains waterworks_overrides.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function waterworks_overrides_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the waterworks_overrides module.
+    case 'help.page.waterworks_overrides':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function waterworks_overrides_theme() {
+  return [
+    'waterworks_overrides' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function waterworks_overrides_form_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id) {
+  if(strpos($form_id,"simplenews_subscriptions") !== FALSE) {
+    $form['mail']['widget'][0]['value']['#title_display'] = 'invisible';
+    $form['mail']['widget'][0]['value']['#attributes']['placeholder'] = 'Email Address';
+    $form['actions']['subscribe']['#attributes']['class'][] = 'btn-subscribe';
+  }
+}

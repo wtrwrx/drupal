@@ -1,0 +1,35 @@
+uuid: 4725c7cd-d63d-478a-9e11-fb2d48c991ce
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:analytics_tracking_codes:87680fbb-0f73-47f3-a3f8-84b097551681'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+  theme:
+    - waterworks
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: hubspottrackingcode
+theme: waterworks
+region: main_menu
+weight: 0
+provider: null
+plugin: 'block_content:87680fbb-0f73-47f3-a3f8-84b097551681'
+settings:
+  id: 'block_content:87680fbb-0f73-47f3-a3f8-84b097551681'
+  label: 'HubSpot tracking code'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

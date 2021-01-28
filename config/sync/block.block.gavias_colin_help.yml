@@ -1,0 +1,22 @@
+uuid: 53e83255-90b6-4aba-b731-3ec261864860
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - gavias_colin
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: gavias_colin_help
+theme: gavias_colin
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

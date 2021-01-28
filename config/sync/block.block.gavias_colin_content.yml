@@ -1,0 +1,22 @@
+uuid: 4ee392f9-cb37-4a9a-8816-417c0c276823
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gavias_colin
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: gavias_colin_content
+theme: gavias_colin
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

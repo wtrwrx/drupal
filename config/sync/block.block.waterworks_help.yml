@@ -1,0 +1,22 @@
+uuid: af422e70-4727-45c0-84a0-0340b0f95195
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - waterworks
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: waterworks_help
+theme: waterworks
+region: help
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

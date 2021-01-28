@@ -1,0 +1,35 @@
+uuid: 12985ed5-8e16-4c01-a782-13a5731ab75d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - waterworks
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: footer
+theme: waterworks
+region: other
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

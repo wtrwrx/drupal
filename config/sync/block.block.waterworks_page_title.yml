@@ -1,0 +1,20 @@
+uuid: 5e41a49b-8708-4bcd-8c0e-2486d5458f02
+langcode: en
+status: true
+dependencies:
+  theme:
+    - waterworks
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: waterworks_page_title
+theme: waterworks
+region: other
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: 4f46cd99-d2d4-4393-a4ae-1817334d8b52
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xeA0rGvrtGBavBmxow5A_0i52dPOi-TekLrc1eHcV_4
+id: menu-second
+label: 'Menu second'
+description: 'Menu of sidebar'
+locked: false

@@ -1,0 +1,20 @@
+uuid: ec622077-d3c8-418c-af97-4a9810160d3f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - waterworks
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: waterworks_local_actions
+theme: waterworks
+region: help
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

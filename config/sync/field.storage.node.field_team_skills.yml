@@ -1,0 +1,23 @@
+uuid: 4513e3fe-1ff6-4f34-894e-02dcf7b38caf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: VCxwviyHzx3ZaUrwAvEFPmJLm9HRSQtwHz3Bash_dsw
+id: node.field_team_skills
+field_name: field_team_skills
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

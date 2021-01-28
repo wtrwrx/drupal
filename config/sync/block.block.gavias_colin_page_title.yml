@@ -1,0 +1,20 @@
+uuid: d428327e-760a-475d-a83b-c9ef8b0d56e0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gavias_colin
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: gavias_colin_page_title
+theme: gavias_colin
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

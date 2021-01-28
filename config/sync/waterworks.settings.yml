@@ -1,0 +1,24 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: 'public://assets/0-MAIN-ASSETS/1-Header/ww-logo.svg'
+favicon:
+  use_default: 0
+  path: 'public://WaterWorks-Brandmark-color-80x80.png'
+  mimetype: image/png
+theme_skin: white
+enable_customize: '0'
+sticky_menu: '1'
+site_layout: wide
+preloader: '0'
+default_header: header-1
+footer_skin: ''
+footer_first_size: '3'
+footer_second_size: '3'
+footer_third_size: '3'
+footer_four_size: '3'
+customize_css: ''

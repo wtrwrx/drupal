@@ -1,0 +1,22 @@
+uuid: ab15402a-dc52-461a-934c-6f731eff7141
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.analytics_tracking_codes
+    - field.field.block_content.analytics_tracking_codes.body
+  module:
+    - text
+id: block_content.analytics_tracking_codes.default
+targetEntityType: block_content
+bundle: analytics_tracking_codes
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

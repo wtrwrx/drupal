@@ -1,0 +1,22 @@
+uuid: 78af838f-d0d8-41e2-ba7c-14c3bce34e4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - waterworks
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: waterworks_messages
+theme: waterworks
+region: help
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

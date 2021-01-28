@@ -1,0 +1,35 @@
+uuid: 4bd8418e-f05e-4b5c-a0c4-084a4111b719
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-second
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - waterworks
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: footersecond
+theme: waterworks
+region: other
+weight: -5
+provider: null
+plugin: 'system_menu_block:footer-second'
+settings:
+  id: 'system_menu_block:footer-second'
+  label: 'Footer Second'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

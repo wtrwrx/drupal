@@ -1,0 +1,22 @@
+uuid: 99c24eb0-1b8c-4dd5-8f62-4b8103bce583
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - waterworks
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: waterworks_powered
+theme: waterworks
+region: other
+weight: -11
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

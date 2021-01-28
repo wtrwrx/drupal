@@ -1,0 +1,19 @@
+uuid: e8c5eb70-33c7-4f10-8232-3cdebe040d4b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hj6zGNwndnW_J6lKfFcg-tY5e5YqWfgXyt0qioGtXL8
+name: Newsletter
+id: default
+description: 'This is an example newsletter. Change it.'
+format: plain
+priority: 0
+receipt: true
+from_name: WaterWorks
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: drupalet@gmail.com
+hyperlinks: false
+new_account: none
+opt_inout: double
+weight: 0

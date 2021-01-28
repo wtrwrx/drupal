@@ -1,0 +1,34 @@
+uuid: 346dd8f9-2aeb-46bc-b9d0-9e99f255577e
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - simplenews
+  theme:
+    - waterworks
+third_party_settings:
+  gaviasthemer:
+    classes: newsletter-block-1
+id: newsletter_investment_opportunities
+theme: waterworks
+region: other
+weight: 0
+provider: null
+plugin: simplenews_subscription_block
+settings:
+  id: simplenews_subscription_block
+  label: 'Sign Up'
+  provider: simplenews
+  label_display: '0'
+  newsletters:
+    default: default
+  message: 'Enter your email and stay informed about our upcoming launch!'
+  unique_id: newsletter_launch_signup
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

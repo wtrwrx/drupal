@@ -1,0 +1,30 @@
+uuid: 6f1e1785-70bc-4905-9864-1b0c279ae477
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: UQTreGkmJa2jTb7ub485mTwQyXjENtIy6ZeGB_R7neQ
+id: content
+label: Content
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  e34fccb0-f935-441c-8894-a567a99859e8:
+    id: node_type
+    bundles:
+      article: article
+      banner: banner
+      page: page
+      page_full: page_full
+      portfolio: portfolio
+      team: team
+      testimonial: testimonial
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e34fccb0-f935-441c-8894-a567a99859e8
+selection_logic: and
+weight: -5
+relationships: {  }

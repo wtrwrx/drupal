@@ -1,0 +1,8 @@
+uuid: 2a7dd26b-385d-408d-adc1-dc3f316d92b1
+langcode: en
+status: true
+dependencies: {  }
+id: footer-third
+label: 'Footer Third'
+description: ''
+locked: false

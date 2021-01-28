@@ -1,0 +1,35 @@
+uuid: 1ae44a40-816a-404f-9599-a65b4c416ab8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:analytics_tracking_codes:f1d82bff-eb05-40d9-94db-3802d7472f26'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+  theme:
+    - waterworks
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: twitteruniversalwebsitetagcode
+theme: waterworks
+region: main_menu
+weight: 0
+provider: null
+plugin: 'block_content:f1d82bff-eb05-40d9-94db-3802d7472f26'
+settings:
+  id: 'block_content:f1d82bff-eb05-40d9-94db-3802d7472f26'
+  label: 'Twitter universal website tag code'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

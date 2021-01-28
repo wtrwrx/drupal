@@ -1,0 +1,35 @@
+uuid: aa46e205-2aec-49cb-b724-ea3f252535b9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:analytics_tracking_codes:098fb080-59cb-4a21-bf8a-53d7eb7dd089'
+  module:
+    - block_content
+    - block_visibility_groups
+    - gaviasthemer
+  theme:
+    - waterworks
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: facebookpixelcode
+theme: waterworks
+region: main_menu
+weight: 0
+provider: null
+plugin: 'block_content:098fb080-59cb-4a21-bf8a-53d7eb7dd089'
+settings:
+  id: 'block_content:098fb080-59cb-4a21-bf8a-53d7eb7dd089'
+  label: 'Facebook pixel code'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

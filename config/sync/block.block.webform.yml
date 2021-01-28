@@ -1,0 +1,35 @@
+uuid: 5e709268-3909-49fd-b4fd-c02d60118046
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.raise_funds
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - webform
+  theme:
+    - waterworks
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: webform
+theme: waterworks
+region: other
+weight: -2
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Raise Funds (Webform)'
+  provider: webform
+  label_display: '0'
+  webform_id: raise_funds
+  default_data: ''
+  redirect: false
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

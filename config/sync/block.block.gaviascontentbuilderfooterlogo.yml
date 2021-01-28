@@ -1,0 +1,30 @@
+uuid: 97820756-ad1e-4949-a8a7-3cfd1575b5f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - gavias_content_builder
+    - gaviasthemer
+  theme:
+    - waterworks
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gaviascontentbuilderfooterlogo
+theme: waterworks
+region: before_footer
+weight: -14
+provider: null
+plugin: 'gavias_content_builder_block:gavias_content_builder_block____12'
+settings:
+  id: 'gavias_content_builder_block:gavias_content_builder_block____12'
+  label: 'Gavias Content Builder - Footer Logo'
+  provider: gavias_content_builder
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

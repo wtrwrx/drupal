@@ -1,0 +1,17 @@
+uuid: 4ae68921-e564-4eed-946d-9093b978c6a9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Investment Opportunities'
+id: investment_opportunities
+description: 'To learn about our new investment opportunities right as they launch '
+format: html
+priority: 3
+receipt: true
+from_name: WaterWorks
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: drupalet@gmail.com
+hyperlinks: true
+new_account: none
+opt_inout: double
+weight: 0

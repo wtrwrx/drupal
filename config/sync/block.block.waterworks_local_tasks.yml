@@ -1,0 +1,22 @@
+uuid: e808fdcc-6e66-4a1e-9a6f-fb2324e2ec18
+langcode: en
+status: true
+dependencies:
+  theme:
+    - waterworks
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: waterworks_local_tasks
+theme: waterworks
+region: help
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

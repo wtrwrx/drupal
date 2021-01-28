@@ -1,0 +1,22 @@
+uuid: 0c1c9c0e-d66a-45f3-9d5d-194ae927465c
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - waterworks
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: waterworks_search
+theme: waterworks
+region: other
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

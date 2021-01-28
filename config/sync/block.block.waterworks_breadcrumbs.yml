@@ -1,0 +1,22 @@
+uuid: 0904caa8-0684-49bd-bd92-80483df1b542
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - waterworks
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: waterworks_breadcrumbs
+theme: waterworks
+region: other
+weight: -9
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

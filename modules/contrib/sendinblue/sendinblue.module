@@ -1,0 +1,103 @@
+<?php
+
+/**
+ * @file
+ * The entry point of Sendinblue module.
+ */
+
+use Drupal\sendinblue\SendinblueManager;
+use Drupal\user\UserInterface;
+
+if (!class_exists('SendinBlue\Client\Configuration')) {
+
+  include_once __DIR__ . '/lib/api-v3-sdk/lib/Model/ModelInterface.php';
+
+  foreach (glob(__DIR__ . '/lib/api-v3-sdk/lib/*.php') as $filename) {
+    include_once $filename;
+  }
+  foreach (glob(__DIR__ . '/lib/api-v3-sdk/lib/Api/*.php') as $filename) {
+    include_once $filename;
+  }
+  foreach (glob(__DIR__ . '/lib/api-v3-sdk/lib/Model/*.php') as $filename) {
+    include_once $filename;
+  }
+}
+
+/**
+ * Implements hook_help().
+ */
+function sendinblue_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#sendinblue':
+      return t('Sendinblue module provides integration with the SendinBlue email delivery service.');
+  }
+}
+
+/**
+ * Register a module (or theme's) theme implementations.
+ *
+ * @see hook_theme_registry_alter()
+ */
+function sendinblue_theme($existing, $type, $theme, $path) {
+  return [
+    'generateHomeLogout' => [
+      'variables' => ['formulaire_api_key' => NULL],
+    ],
+    'generateHomeLogin' => [
+      'variables' => [
+        'api_version' => NULL,
+        'account_username' => NULL,
+        'account_email' => NULL,
+        'account_data' => NULL,
+        'total_subscribers' => NULL,
+        'sendinblue_logout_form' => NULL,
+        'sendinblue_user_register_form' => NULL,
+        'sendinblue_send_email_form' => NULL,
+      ],
+    ],
+    'iframe_page' => [
+      'variables' => ['url_iframe' => NULL],
+    ],
+  ];
+}
+
+/**
+ * Add attachments (typically assets) to a page before it is rendered.
+ *
+ * @param array &$attachments
+ *   An array that you can add attachments to.
+ *
+ * @see hook_page_attachments_alter()
+ */
+function sendinblue_page_attachments(array &$attachments) {
+  if (\Drupal::service('router.admin_context')->isAdminRoute()) {
+    $route_match = \Drupal::routeMatch();
+    if (strpos($route_match->getRouteName(), 'sendinblue') !== FALSE) {
+      $attachments['#attached']['library'][] = 'sendinblue/sendinblue.admin-setting';
+    }
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert() for node entities.
+ *
+ * This tests saving a node on node insert.
+ *
+ * @see \Drupal\node\Tests\NodeSaveTest::testNodeSaveOnInsert()
+ */
+function sendinblue_user_insert(UserInterface $user) {
+  /** @var \Drupal\sendinblue\SendinblueManager $sendInBlueManager */
+  $sendInBlueManager = \Drupal::service('sendinblue.manager');
+  /** @var \Drupal\Core\Config\ConfigFactoryInterface $configFactory */
+  $configFactory = \Drupal::service('config.factory');
+
+  $sendinblue_registered_active = $configFactory->get(SendinblueManager::CONFIG_SETTINGS_REGISTERING_USER)
+    ->get('sendinblue_put_registered_user')['active'];
+  $sendinblue_registered_list = $configFactory->get(SendinblueManager::CONFIG_SETTINGS_REGISTERING_USER)
+    ->get('sendinblue_put_registered_user')['list'];
+
+  if ($sendInBlueManager->isLoggedInState() && $sendinblue_registered_active) {
+    $sendInBlueManager->subscribeUser($user->getEmail(), ['nom' => $user->getAccountName()], [$sendinblue_registered_list]);
+    return;
+  }
+}

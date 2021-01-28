@@ -1,0 +1,35 @@
+uuid: 1e6f3418-31dd-41aa-87a7-c4357326129d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-third
+  module:
+    - block_visibility_groups
+    - gaviasthemer
+    - system
+  theme:
+    - waterworks
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: menuthird
+theme: waterworks
+region: main_menu
+weight: -14
+provider: null
+plugin: 'system_menu_block:menu-third'
+settings:
+  id: 'system_menu_block:menu-third'
+  label: 'Menu Third'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

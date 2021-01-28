@@ -1,0 +1,11 @@
+hubspot_log_code: ''
+hubspot_code: ''
+hubspot_client_id: 2deae4fd-4762-4c37-a80d-5a980efa70e0
+hubspot_client_secret: 46bc02e6-2bc7-4a43-a5d8-76242bb6da12
+hubspot_portalid: '6072864'
+hubspot_scope: contacts%20content%20reports%20social%20automation%20actions%20timeline%20business-intelligence%20oauth%20forms%20files%20hubdb%
+hubspot_debug_on: 1
+tracking_code_on: 1
+_core:
+  default_config_hash: zleX7eugf-JBTJemAHOiV9zqXFPCl7cKxdK_EQ2_Hcs
+hubspot_debug_email: team@waterworksfund.com
